@@ -39,7 +39,7 @@
                 <br>
                 <center><img src="https://theskillcraft.com/img-host/images/2020/09/11/logo-2.png" width=70% height=70%></center>
                 <div class="card-body">
-                    <form method="POST">
+                    <form method="POST" name="c2c-regis-form">
                         <div class="form-row m-b-55">
                             <div class="name">Name</div>
                             <div class="value">
@@ -201,6 +201,19 @@
 
     <!-- Main JS-->
     <script src="js/global.js"></script>
+
+    <!-- Form Submit JS-->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbygh_--qZs_cNpZ2qA0le7iMza55fMMr_gC6W3lmwe6547TugSy/exec'
+        const form = document.forms['c2c-regis-form']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank You for Registering for the Webinar! We will get back to you soon!!"))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 
 </body>
 
