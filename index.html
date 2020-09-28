@@ -10,7 +10,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Au Register Forms by Colorlib</title>
+    <title>Campus 2 Corporate Webinar Registration</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -24,6 +24,9 @@
 
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
+
+    <!-- Adding Favicon-->
+    <link rel="shortcut icon" href="https://theskillcraft.com/img-host/images/2020/08/25/Logo-Round.png" type="image/x-icon">
 </head>
 
 <body>
@@ -31,7 +34,7 @@
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-heading">
-                    <h2 class="title">Event Registration Form</h2>
+                    <h2 class="title">Campus 2 Corporate Webinar Registration</h2>
                 </div>
                 <div class="card-body">
                     <form method="POST">
@@ -55,13 +58,73 @@
                             </div>
                         </div>
                         <div class="form-row">
+                            <div class="name">Degree</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="degreeOfStudy">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>UG</option>
+                                            <option>PG</option>
+                                            <option>PhD</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Year of Study</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="yearOfStudy">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>2nd Year</option>
+                                            <option>3rd Year</option>
+                                            <option>4th Year</option>
+                                            <option>5th Year</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Branch/Dept</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>Computer Science and Engg</option>
+                                            <option>Electronics and Comm Engg</option>
+                                            <option>Electrical and Elctronics Engg</option>
+                                            <option>Civil Engg</option>
+                                            <option>Mechanical Engg</option>
+                                            <option>Production Engg</option>
+                                            <option>Chemical Engg</option>
+                                            <option>Materials Science and Engg</option>
+                                            <option>School of Biotechnology</option>
+                                            <option>School of Management Studies</option>
+                                            <option>Physics</option>
+                                            <option>Chemistry</option>
+                                            <option>Mathematics</option>
+                                            <option>Architecture and Planning</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="form-row">
                             <div class="name">Company</div>
                             <div class="value">
                                 <div class="input-group">
                                     <input class="input--style-5" type="text" name="company">
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="form-row">
                             <div class="name">Email</div>
                             <div class="value">
@@ -71,13 +134,13 @@
                             </div>
                         </div>
                         <div class="form-row m-b-55">
-                            <div class="name">Phone</div>
+                            <div class="name">WhatsApp No</div>
                             <div class="value">
                                 <div class="row row-refine">
                                     <div class="col-3">
                                         <div class="input-group-desc">
                                             <input class="input--style-5" type="text" name="area_code">
-                                            <label class="label--desc">Area Code</label>
+                                            <label class="label--desc">Country Code</label>
                                         </div>
                                     </div>
                                     <div class="col-9">
@@ -106,7 +169,7 @@
                             </div>
                         </div>
                         <div class="form-row p-t-20">
-                            <label class="label label--block">Are you an existing customer?</label>
+                            <label class="label label--block">Do you know about "The Skill Craft" before?</label>
                             <div class="p-t-15">
                                 <label class="radio-container m-r-55">Yes
                                     <input type="radio" checked="checked" name="exist">
