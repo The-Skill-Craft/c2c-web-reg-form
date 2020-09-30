@@ -90,6 +90,7 @@
                                             <option>3rd Year</option>
                                             <option>4th Year</option>
                                             <option>5th Year</option>
+                                            <option>Other...</option>
                                         </select>
                                         <div class="select-dropdown"></div>
                                     </div>
@@ -215,7 +216,7 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thank You for Registering for the Webinar! We will get back to you soon!!"))
+            .then(response => alert("Thank You for Registering for the Webinar! You will recieve scheduled Webinar links to your Registered Email at 13:00 IST on 10th Oct, 2020."))
             .catch(error => console.error('Error!', error.message))
         })
       </script>
