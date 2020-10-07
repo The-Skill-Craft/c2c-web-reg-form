@@ -64,8 +64,8 @@
                             <div class="value">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="degreeOfStudy">
-                                            <option disabled="disabled" selected="selected" required>Choose option</option>
+                                        <select name="degreeOfStudy" required>
+                                            <option disabled="disabled" selected="selected">Choose option</option>
                                             <option>BTech</option>
                                             <option>MTech</option>
                                             <option>MSc</option>
@@ -83,8 +83,8 @@
                             <div class="value">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="yearOfStudy">
-                                            <option disabled="disabled" selected="selected" required>Choose option</option>
+                                        <select name="yearOfStudy" required>
+                                            <option disabled="disabled" selected="selected">Choose option</option>
                                             <option>1st Year</option>
                                             <option>2nd Year</option>
                                             <option>3rd Year</option>
@@ -102,8 +102,8 @@
                             <div class="value">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="subject">
-                                            <option disabled="disabled" selected="selected" required>Choose option</option>
+                                        <select name="subject" required>
+                                            <option disabled="disabled" selected="selected">Choose option</option>
                                             <option>Computer Science and Engg</option>
                                             <option>Electronics and Comm Engg</option>
                                             <option>Electrical and Electronics Engg</option>
@@ -125,11 +125,26 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="form-row">
-                            <div class="name">Company</div>
+                        <div class="form-row">
+                            <div class="name">Institute</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="company">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="instituteOfStudy" required>
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option>National Institute of Technology Calicut</option>
+                                            <option>Other...</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="form-row">
+                            <div class="name">If other institute, please specify</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="otherInstitute">
                                 </div>
                             </div>
                         </div> -->
